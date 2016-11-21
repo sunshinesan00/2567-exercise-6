@@ -51,6 +51,10 @@ body {
 	font-weight: 800;
 }
 
+address {
+	font-style: normal; /*to mimic the original format*/
+}
+
 /*--------------------------------------------------------------
 1.2 - HEADINGS
 -------------------------------------------------------------- */
@@ -134,17 +138,36 @@ form a:hover {
 /*--------------------------------------------------------------
 1.5 - LISTS
 -------------------------------------------------------------- */
-dt, dd {
-	display: inline-block
-	
+
+ul {
+	padding: 0;
 }
-dt {
-	font-weight:100;
-	width: 20px;
+
+#contact li {
+	list-style: none;
+	font-weight: 100;
 }
-dd {
+
+#contact li span {
 	font-weight: 600;
 }
+
+#contact li:first-child span {
+	margin-left: 10px;
+}
+
+#contact li:nth-child(2) span {
+	margin-left: 29px;
+}
+
+#contact li:nth-child(3) span {
+	margin-left: 19px;
+}
+
+#contact li:nth-child(4) span {
+	margin-left: 16px;
+}
+
 /*--------------------------------------------------------------
 2.0 - MAIN MENU
 -------------------------------------------------------------- */
@@ -163,7 +186,7 @@ nav li  {
 nav a {
 	color: white;
 	text-decoration: none;
-	padding:10px;
+	padding:10px; 
 }
 
 nav a:hover {
@@ -427,17 +450,7 @@ figure {
 	float: right !important;
 }
 
-
-
-
-
-
 @media screen and (max-width: 768px) {
-	
-	
-}
-
-@media screen and (max-width: 480px) {
 	
 	.wrapper {
 		width: 95%;
@@ -445,11 +458,11 @@ figure {
 	
 	/*nav bar*/
 	.col-1-6 {
-		width: 25%;
+		width: 50%;
 	}
 	
 	.col-3-5 {
-		width: 75%;
+		width: 100%;
 	}
 	
 	/*hero heading*/

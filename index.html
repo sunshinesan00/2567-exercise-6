@@ -29,7 +29,7 @@
 <header class="p-t-md" id="hero">
 	<div class="wrapper">
     	<div class="row">
-            <figure class="col-1-6">       
+            <figure class="col-1-6"> <!-- use of figure? need to check -->
                 <img src="img/logo.png" alt="creativeworks logo">
             </figure>
             <nav class="col-3-5 push-right txt-uppercase" id="smooth-scroll"> 
@@ -51,12 +51,14 @@
 <!-- ===========OUR SERVICES=============== -->
 
 <section class="p-t-lg p-b-xl" id="services">
-	<header class="wrapper">
+	<div class="wrapper">
     	<div class="row txt-center">
         	<div class="col-9-12 center-block">
-            	<h2 class=" txt-uppercase">Our Services</h2>
-                <p class="lead txt-uppercase">Lorem ipsum dolor sit amet, usu <span>nemore oporteat</span> lobortis ad, eos soleat verear cotidieque id. </p>
-                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, & indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
+            	<header>
+            		<h2 class=" txt-uppercase">Our Services</h2>
+                	<p class="lead txt-uppercase">Lorem ipsum dolor sit amet, usu <span>nemore oporteat</span> lobortis ad, eos soleat verear cotidieque id. </p>
+                </header>
+                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, &amp; indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
             </div>
         </div>
         <div class="row txt-center">
@@ -70,7 +72,9 @@
             </section>
             <section class="col-1-4">
             	<div>
-                    <h3 class="txt-uppercase">Design</h3>
+                	<header>
+                    	<h3 class="txt-uppercase">Design</h3>
+                    </header>
                     <p>Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et.</p>
                 </div>
             </section>
@@ -84,41 +88,42 @@
             </section>
             <section class="col-1-4">
             	<div>
-                    <h3 class="txt-uppercase">Launch</h3>
+                	<header>
+                    	<h3 class="txt-uppercase">Launch</h3>
+                    </header>
                     <p>Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. Ea cum diam malorum vivendum.</p>
                 </div>
             </section>
         </div>
-    </header>
+    </div>
 </section>
 
 
-<footer class="p-t-lg p-b-lg" id="contact">
-	<header class="wrapper">
+<section class="p-t-lg p-b-lg" id="contact">
+	<div class="wrapper">
     	<div class="row txt-center">
         	<div class="col-9-12 center-block">
-            	<h2 class=" txt-uppercase">Contact Us</h2>
-                <p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
+            	<header>
+            		<h2 class=" txt-uppercase">Contact Us</h2>
+                	<p>Vis te veri tritani, at quodsi commune has, probo maiestatis ei has. Molestie suscipiantur concludaturque cu has, nam ne omnesque antiopam, indoctum complectitur pro ad. Ea cum diam malorum vivendum, vel quod commodo repudiandae et. </p>
+            	</header>
             </div>
         </div>
         <div class="row">
         	<section class="col-1-2">
             	<div class="row">
                     <div class="col-1-2">
-                    	<h3>Address</h3>
-                        <h4>Zendesk</h4>
-                        <p class="m-t-0 m-b-lg">123 Fake Street<br/>
+                    	<p class="m-t-0 m-b-lg"><b>Address</b><br>Zendesk
+                        123 Fake Street<br/>
                         Fakersvill, FA 12345-1234</p>
-                        <dl>
-                        	<dt>Phone:</dt>
-                            <dd>123.123.1234</dd><br/>
-                            <dt>Fax:</dt>
-                            <dd>123.123.1234</dd><br/>
-                            <dt>Email:</dt>
-                            <dd>hello@zendesk.com</dd><br/>
-                            <dt>Skype:</dt>
-                            <dd>Zendesk</dd>
-                        </dl>
+                        <address>
+                            <ul>
+                                <li>Phone:<span><a class="phone" href="tel:11231231234">123.123.1234</a></span></li>
+                                <li>Fax:<span>123.123.1234</span></li>
+                                <li>Email:<a href="mailto:hello@zendesk.com"><span>hello@zendesk.com</span></a></li>
+                                <li>Skype:<span>Zendesk</span></li>
+                            </ul>
+                        </address>
                     </div>
                     <div class="col-1-2" id="map">
                     </div>
@@ -127,7 +132,7 @@
             <div class="col-1-2 p-t-lg">
                 <form class="row">
                 	<div class="col-1-2">
-                    <label>First & Last Name:</label>
+                    <label>First &amp; Last Name:</label>
                     <input  name="name" type="text" value="" placeholder="Name"/>
                     </div>
                     <div class="col-1-2">
@@ -144,8 +149,8 @@
                 </form>
             </div>
         </div>
-    </header>
-</footer>
+    </div>
+</section>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
 <script>
